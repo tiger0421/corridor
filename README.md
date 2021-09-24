@@ -1,0 +1,1 @@
+![corridor](image/corridor.png)
