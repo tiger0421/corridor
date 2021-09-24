@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+
+<sdf version='1.6'>
+  <model name="corridor">
+    <static>true</static>
+    <link name="corridor_link">
+      <pose>0 0 0 0 0 1.57</pose>
+      <collision name="corridor_collision">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://corridor/meshes/collision/corridor.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <bounce>
+            <restitution_coefficient>0.1</restitution_coefficient>
+            <threshold>0.005</threshold>
+          </bounce>
+        </surface>
+      </collision>
+      <visual name="corridor_visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file://corridor/meshes/visual/corridor.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
